@@ -53,6 +53,8 @@ ns3 IN A 217.70.187.12
 ns3 IN AAAA 2604:3400:aaac::c
 ```
 
+You don't need any special permission as the script simply uses the public API to hash the name, and your local DNS resolver to retrieve the IP addresses of Gandi's nameservers
+
 ## Requirements
 
 The script is a simple wrapper around `curl` and `dig`, so it need those binaries to work.
