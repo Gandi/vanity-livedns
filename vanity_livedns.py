@@ -48,7 +48,7 @@ def which(program):
     return None
 
 
-def require_execuatble(program):
+def require_executable(program):
     """exit with error unless program is an accessible executable"""
     if not which(program):
         print('%r command not found, cannot continue' % program,
@@ -162,8 +162,8 @@ def parse_args():
 def main():
     args = parse_args()
 
-    require_execuatble('dig')
-    require_execuatble('curl')
+    require_executable('dig')
+    require_executable('curl')
 
     for fqdn in args.fqdns:
         one_domain(fqdn, args.ns)
